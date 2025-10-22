@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.cookiealert {
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 350px;
+  min-height: 20px;
+  color: #fff;
+  background-color: #222 !important;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  z-index: 999;
+}
+
+.cookiealert.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  text-decoration: underline;
+}
+
+.cookiealert p {
+  color: #fff !important;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 0;
+}
+
+.cookiealert a {
+  color: #fff !important;
+  text-decoration: underline !important;
+  padding: 0;
+}
+
+.cookiealert button {
+  margin-top: 15px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: $colorMain;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  text-align: center;
+  transition: background 0.3s;
+}
+.cookiealert button:hover {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.7;
+}
+
+button {
+  outline: none !important;
+}
+.cookiealert button:focus {
+  outline: 0 !important;
+}
+
+/*Smartphone*/
+@media screen and (max-width: 480px) {
+  .cookiealert {
+    bottom: 0;
+    right: 0px;
+    width: auto;
+    min-height: 0px;
+  }
+  .alert {
+    margin-bottom: 0rem;
+  }
+}

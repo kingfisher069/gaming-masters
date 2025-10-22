@@ -1,0 +1,32 @@
+// footer
+.footer-fluid {
+  color: $txtColorLight;
+}
+.footer-item {
+  margin-bottom: 30px;
+}
+a.footer-mainnav {
+  font-weight: 600;
+}
+a.footer-mainnav,
+a.footer-subnav {
+  color: $txtColorLight;
+  text-decoration: none;
+}
+.footer-mainnav,
+.footer-subnav {
+  padding: 0px 30px 0px 0px;
+}
+a:hover.footer-mainnav,
+a:hover.footer-subnav {
+  text-decoration: underline;
+}
+.footer-txt {
+  font-size: 1rem;
+  padding: 10px 0px 0px 0px;
+  border-top: 1px solid $txtColorLight;
+}
+a.footer-link {
+  color: $txtColorLight;
+  text-decoration: underline;
+}

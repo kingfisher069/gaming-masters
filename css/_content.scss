@@ -1,0 +1,147 @@
+//content & body
+.img-hover {
+  position: relative;
+}
+
+.img-hover:hover .image {
+  opacity: 0.4;
+}
+
+.img-hover:hover h1 {
+  color: $colorMain !important;
+}
+
+.img-hover:hover .middle {
+  opacity: 1;
+}
+
+.proposal-img {
+  background: url(../images/proposal.jpg) bottom center no-repeat;
+  background-size: contain;
+  max-width: 100%;
+  min-height: 612px !important;
+}
+
+.image {
+  cursor: pointer;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.teamMembers {
+  display: none;
+}
+
+.award {
+  text-align: center;
+}
+
+.quality-gfx {
+  z-index: 2;
+}
+
+.quality-txt {
+  z-index: 1;
+}
+
+.quality-res {
+  display: none;
+}
+
+.study {
+  padding: 2em 0em;
+  border-top: 0.1em solid #999;
+  &:hover {
+    color: #000;
+  }
+}
+
+.study a {
+  color: $colorDark;
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+.study-arrow {
+  color: $colorMain !important;
+}
+
+.teilnehmen {
+  color: #ffffff !important;
+  padding: 10em 3.5em;
+}
+
+.gbox {
+  padding: 60px;
+  border: 8px solid #222;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gbox:hover {
+  border: 8px solid $colorMain;
+  background-color: #111;
+}
+
+.gbox:hover .btn-cta2 {
+  border: 8px solid $colorMain !important;
+}
+
+ol {
+  counter-reset: index;
+  padding: 0;
+}
+
+.li {
+  font-size: 1.47rem;
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #444;
+  color: #fff;
+}
+
+.li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 3.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  min-height: 50px;
+  margin-right: 20px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-bottom: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  color: $colorMain;
+}
+
+.li:hover {
+  background-color: $colorMain;
+  border-top: 1px solid $colorMain;
+  border-bottom: 1px solid $colorMain;
+}
+.li:hover::before {
+  color: #fff !important;
+}

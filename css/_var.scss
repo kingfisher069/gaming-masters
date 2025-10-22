@@ -1,0 +1,36 @@
+//PwC Colors
+$pwc-yellow: rgb(255, 182, 0);
+$pwc-tangerine: rgb(235, 140, 0);
+$pwc-orange: rgb(208, 74, 2);
+$pwc-rose: rgb(219, 83, 106);
+$pwc-digital-rose: rgb(217, 57, 84);
+$pwc-red: rgb(224, 48, 30);
+$pwc-darker: rgb(17, 17, 17);
+$pwc-dark: #111;
+$pwc-medium: rgb(70, 70, 70);
+$pwc-grey: rgb(125, 125, 125);
+$pwc-light: rgb(222, 222, 222);
+$pwc-black: rgb(0, 0, 0);
+$pwc-white: rgb(255, 255, 255);
+$pwc-222: rgb(34, 34, 34);
+
+//Template Colors
+$colorMain: $pwc-red;
+$colorMainDark: darken($colorMain, 15%);
+$colorMainSecondary: $pwc-yellow;
+$colorDark: $pwc-dark;
+$colorLight: $pwc-light;
+$colorWhite: $pwc-white;
+$specialColor: $pwc-222;
+
+$bgColorMain: $pwc-white;
+$bgColorDark: $pwc-dark;
+$bgColorLight: $pwc-light;
+
+$txtColorMain: $pwc-dark;
+$txtColorDark: $pwc-dark;
+$txtColorLight: $pwc-white;
+
+//PwC Fonts
+$txt-font: "Helvetica Neue";
+$headline-font: "Helvetica Neue";

@@ -1,0 +1,213 @@
+// default CSS settings
+html,
+body {
+  color: $txtColorMain;
+  font-family: $txt-font;
+  background-color: $pwc-dark;
+}
+
+p {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7em;
+}
+
+li {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7em;
+}
+
+h1,
+.h1 {
+  font-family: $headline-font;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2,
+.h2 {
+  font-size: 2.2rem;
+  font-family: $headline-font;
+}
+
+a {
+  color: $colorMain;
+  text-decoration: none;
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.link {
+  color: $txtColorMain;
+  text-decoration: none;
+  &:hover {
+    color: $colorMain !important;
+    text-decoration: none;
+    border-bottom: 1px $colorMain solid !important;
+  }
+}
+
+.light-link {
+  color: $txtColorLight;
+  border-bottom: 1px $txtColorLight solid;
+  padding-bottom: 3px;
+}
+
+.dark-link {
+  color: $txtColorDark;
+  border-bottom: 1px $txtColorDark solid;
+  padding-bottom: 3px;
+}
+
+.icon-link {
+  border-bottom: 0px $txtColorDark solid;
+  padding-bottom: 0px;
+  margin-right: 0.5em;
+}
+
+.color-link {
+  color: $txtColorMain;
+  border-bottom: 0px $txtColorMain solid;
+  padding-bottom: 3px;
+}
+
+.small {
+  font-size: 0.9em;
+  line-height: 1.125em;
+}
+
+.top-mar60 {
+  margin-top: 4em;
+}
+
+.top-mar90 {
+  margin-top: 6em;
+}
+
+.bot-mar {
+  margin-bottom: 2em;
+}
+.bot-mar0 {
+  margin-bottom: 0;
+}
+.bot-mar5 {
+  margin-bottom: 0.2em;
+}
+.bot-mar10 {
+  margin-bottom: 0.5em;
+}
+.bot-mar15 {
+  margin-bottom: 1em;
+}
+.bot-mar30 {
+  margin-bottom: 2em;
+}
+.bot-mar60 {
+  margin-bottom: 4em;
+}
+.bot-mar90 {
+  margin-bottom: 6em;
+}
+.con-pad {
+  padding: 9em 0px;
+}
+.pad {
+  padding: 2em;
+}
+.nopad {
+  padding: 0;
+}
+.pad0 {
+  padding: 0;
+}
+.pad15 {
+  padding: 1em;
+}
+.pad30 {
+  padding: 2em;
+}
+.pad60 {
+  padding: 4em;
+}
+.pad90 {
+  padding: 9em;
+}
+
+.pad90tb {
+  padding: 0em 7em;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.flexit {
+  display: flex;
+  align-items: center;
+}
+
+.opacity1 {
+  opacity: 1 !important;
+}
+.opacity05 {
+  opacity: 0.5 !important;
+}
+
+.jumbotron {
+  padding: 5em;
+}
+
+.accordion-button {
+  font-family: $txt-font;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0rem;
+  font-size: 1.125rem;
+  color: $colorMain;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.accordion-body {
+  padding: 1.5rem 0rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $colorMain;
+  background-color: #fff;
+}
+
+.jumbotron-1 {
+  position: relative;
+  margin: 0px;
+  border-radius: 0px;
+  background-position: center;
+  background-size: cover !important;
+  padding: 9.5rem 2rem;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  background-color: #e0301e;
+  opacity: 0.9;
+}
+
+.cls-1 {
+  fill: #fff;
+}

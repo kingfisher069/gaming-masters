@@ -1,0 +1,60 @@
+//navigation
+
+#scroll-nav {
+  transition: top 0.3s;
+}
+
+.navbar {
+  padding-bottom: 1rem;
+}
+
+.mandant {
+  font-size: 0.8em !important;
+  position: absolute;
+  top: 50px;
+  padding-left: 90px;
+}
+
+.navbar-nav {
+  margin-top: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $pwc-black !important;
+  &:hover,
+  :active,
+  :focus {
+    color: $colorMain !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $colorMain !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  padding-right: 1.5em !important;
+}
+
+.navbar-toggler {
+  padding: 0.5em;
+  border: 0.1em solid #737373 !important;
+}
+
+.language-btn {
+  margin-right: 2em !important;
+}
+
+.lang {
+  display: inline-block;
+  padding-right: 0.1em !important;
+}

@@ -1,0 +1,205 @@
+// buttons & icons
+.btn-primary {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: $txt-font !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  color: $txtColorLight !important;
+  background-color: $colorMain;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  padding: 14px 23px;
+  font-size: 0.875rem;
+  line-height: 1.14em;
+  &:hover {
+    text-decoration: none !important;
+    background-color: $colorDark !important;
+    border: 2px solid transparent;
+  }
+  &.focus,
+  &:focus {
+    text-decoration: none;
+    background-color: $colorMain !important;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 0rem !important;
+  }
+  &.disabled,
+  &:disabled {
+    color: $txtColorLight;
+    background-color: $colorMain !important;
+    border: 2px solid transparent;
+  }
+}
+
+.btn-lg {
+  @extend .btn-primary;
+  font-size: 1.125rem;
+  padding: 24px 33px;
+}
+
+.btn-cta {
+  @extend .btn-primary;
+  color: $txtColorLight !important;
+  background-color: transparent;
+  border: 8px solid $colorMain;
+  font-size: 1.125rem;
+  padding: 24px 33px !important;
+  &:hover {
+    background-color: $colorMain !important;
+    color: #ffffff !important;
+    border: 8px solid $colorMain;
+  }
+  &.focus,
+  &:focus {
+    background-color: $colorMain !important;
+    border: 8px solid $colorMain;
+  }
+  &.disabled,
+  &:disabled {
+    background-color: $colorMain !important;
+  }
+}
+
+.btn-cta2 {
+  @extend .btn-cta;
+  font-size: 1rem;
+  padding: 18px 25px !important;
+  border: 8px solid #222;
+  &:hover {
+    background-color: $colorMain !important;
+    color: #ffffff !important;
+    border: 8px solid $colorMain;
+  }
+  &.focus,
+  &:focus {
+    background-color: $colorMain !important;
+    border: 8px solid $colorMain;
+  }
+  &.disabled,
+  &:disabled {
+    background-color: $colorMain !important;
+  }
+}
+
+.up-btn {
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.up-btn svg {
+  fill: $colorWhite;
+}
+
+.contact-side {
+  position: fixed;
+  right: 0;
+  margin-right: -5px;
+  bottom: 53%;
+  height: 65px;
+  width: 70px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  z-index: 9999;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  &:hover {
+    background-color: $colorMainDark;
+    width: 90px;
+  }
+}
+
+.contact-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.up-side {
+  position: fixed;
+  right: 0;
+  margin-right: -5px;
+  bottom: 42%;
+  height: 65px;
+  width: 70px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  z-index: 9999;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  &:hover {
+    background-color: $colorMainDark;
+    width: 90px;
+  }
+}
+
+.up-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.bi-arrow-right {
+  margin-right: 0.5em;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.bi-icon {
+  cursor: pointer;
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.bi-arrow-down-short {
+  cursor: pointer;
+  width: 100px !important;
+  height: 100px !important;
+  &:hover {
+    padding: 2px;
+  }
+}
+
+.goDownArrow {
+  position: absolute;
+  bottom: 2em;
+  -webkit-animation: goDownArrow-anim 1s infinite;
+  -moz-animation: goDownArrow-anim 1s infinite;
+  -o-animation: goDownArrow-anim 1s infinite;
+  animation: goDownArrow-anim 1s infinite;
+  z-index: 2;
+}
+
+@keyframes goDownArrow-anim {
+  0% {
+    bottom: 2.5em;
+    z-index: 2000;
+  }
+  50% {
+    bottom: 1em;
+    z-index: 2000;
+  }
+  100% {
+    bottom: 2.5em;
+  }
+}
+
+.bi-download {
+  margin-right: 1em;
+}

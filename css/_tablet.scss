@@ -1,0 +1,65 @@
+//header
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("../images/header-res.jpg") black no-repeat center center scroll;
+    height: 100vh;
+  }
+  header video {
+    display: none;
+  }
+}
+
+//tablet -  medium devices (tablets, less than 992px)
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .noshow {
+    display: none;
+  }
+  .con-pad-tablet {
+    padding: 1em 0px !important;
+  }
+  .top-mar60 {
+    margin-top: 0em !important;
+  }
+  .top-mar90 {
+    margin-top: 0em !important;
+  }
+  .pad90tb {
+    padding: 7em 2em;
+  }
+  #myNavbar {
+    margin: 0em 1em;
+  }
+  .navbar {
+    padding-bottom: 2em;
+  }
+  .navbar-nav {
+    display: block;
+    padding: 2em;
+    background-color: #eee;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 15px;
+  }
+  .header-bg {
+    position: relative;
+    background-size: cover;
+  }
+  .proposal-img {
+    background-size: auto;
+  }
+  .map-item {
+    display: none !important;
+  }
+  .quality-gfx {
+    display: none !important;
+  }
+  .quality-res {
+    display: block;
+  }
+  .teamMembers {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+.care-pad {
+  padding: 6em 0em 4em 0em;
+}
+
+.care-apps {
+  position: absolute;
+  top: 8em;
+  left: 9em;
+}
+
+.app a {
+  color: $colorDark;
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+.app img {
+  &:hover {
+    opacity: 0.5;
+  }
+}
